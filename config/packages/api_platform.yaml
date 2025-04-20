@@ -1,0 +1,17 @@
+# config/packages/api_platform.yaml
+api_platform:
+    mapping:
+        paths: ['%kernel.project_dir%/src/Entity']
+    title: Hello API Platform
+    version: 1.0.0
+    defaults:
+        stateless: true
+        cache_headers:
+            vary: ['Content-Type', 'Authorization', 'Origin']
+        security: "is_granted('IS_AUTHENTICATED_FULLY')"
+    swagger:
+        versions: [3]
+        api_keys:
+            JWT:
+                name: Authorization
+                type: header

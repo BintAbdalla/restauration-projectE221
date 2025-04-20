@@ -1,0 +1,12 @@
+{
+  "files.exclude": {
+    ".env.local": "explorerExcludedFiles",
+    ".env.local.php": "explorerExcludedFiles",
+    ".env.*.local": "explorerExcludedFiles",
+    "config/secrets/prod/prod.decrypt.private.php": "explorerExcludedFiles",
+    "public/bundles/": "explorerExcludedFiles",
+    "var/": "explorerExcludedFiles",
+    "vendor/": "explorerExcludedFiles",
+    "config/jwt/*.pem": "explorerExcludedFiles"
+  }
+}
